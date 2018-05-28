@@ -8,19 +8,7 @@ typedef long long ll;
 const int mod=1e8+7;
 char s[10010];
 int x[10010];
-int a[10010];
-int n;
-
-ll f()
-{
-    ll ans=1;
-    for (int i=3;i<=n;i++) {
-        x[i]=a[i-1]-a[i-2]+x[i-3];
-        if (x[i]<0||x[i]>2) return 0;
-        if (x[i]==1) ans=ans*2%mod;
-    }
-    if (n>=2&&x[n-2]!=a[n-1]-a[n]) return 0;
-    return ans;
+i
 }
 
 int main()
